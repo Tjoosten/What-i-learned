@@ -3,7 +3,7 @@ It's never to late meet new people.
 
 Today i was going to Brussels (Belguim) on my one. To meet Emily and Tobias. 
 In they train i was scared. And mulling about things? What they think about authism? Who are they? 
-Two awesome humans. We went out for a lunch and a chat. 
+they are two awesome humans. We went out for a lunch and a chat. 
 After that we go out for a walk. Like some architectural buildings in the city. 
  
  *we walk and walk*
