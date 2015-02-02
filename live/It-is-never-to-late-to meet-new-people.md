@@ -1,4 +1,4 @@
-It's never to late meet new people. 
+It's never to late to meet new people. 
 ====================================
 
 Today i was going to Brussels (Belguim) on my one. To meet Emily and Tobias. 
