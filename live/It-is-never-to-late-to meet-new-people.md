@@ -14,7 +14,7 @@ I hope we can hold contact with each other!
 
 And Emily i still want to help u with your fuse!
 
-**THANKS** Guys for the great day i got the in brussels. 
+**THANKS** Guys for the great day i got in brussels. 
 Now it is time to take my train. I dry my tear and move on with this joyfull memory in my mind!
 
 [Placebo - song to say goodbye](https://www.youtube.com/watch?v=e7bxXjQL3cY)
