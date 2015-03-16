@@ -8,7 +8,7 @@ C:\Users\username>cd C:\bin
 C:\bin>php -r "readfile('https://getcomposer.org/installer');" | php
 ```
 
-**Note:** if the above fails due to readfile, use the http url or enable php_openssl.dll in php.ini
+**Note:** if the above fails due to readfile, use the http url or enable `php_openssl.dll` in `php.ini`
 
 Create a new composer.bat file alongside composer.phar:
 
