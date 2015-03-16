@@ -1,7 +1,7 @@
 Install composer on systems.
 ==============================
 
-## Windowq *(Manual install)* 
+## Windows *(Manual install)* 
 
 ```bash
 C:\Users\username>cd C:\bin
