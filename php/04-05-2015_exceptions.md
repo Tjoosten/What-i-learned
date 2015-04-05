@@ -11,7 +11,7 @@ Before we begin with all the explanations, I would like to show an example first
 
 Let's say you want to calculate the area of a circle, by the givin radius. This function will do that:
 
-```php
+```
 function circle_area($radius) {
   return pi() * $radius * $radius;
 }
