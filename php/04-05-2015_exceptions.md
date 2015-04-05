@@ -20,7 +20,7 @@ function circle_area($radius) {
 It is very simple, however it does not check if the radius is a valid number.
 Now we are going to do that, and throw an exception if the radius is a negative number:
 
-```php
+```
 function circle_area($radius) {
 
   // radius can't be negative
@@ -34,7 +34,7 @@ function circle_area($radius) {
 
 Let's see what happens when we call it with a negative number:
 
-```php
+```
 $radius = -2;
 
 echo "Circle Radius: $radius => Circle Area: ".
@@ -44,7 +44,7 @@ echo "Another line";
 
 The script crashes with the following message:
 
-```html
+```
 <br />
 <b>Fatal error</b>:  Uncaught exception 'Exception' with message 'Invalid Radius: -2' in C:\wamp\www\test\test.php:19
 
@@ -92,7 +92,7 @@ It was first adopted in PHP with version 5.
 By definition an Exception is `thrown`, when an exceptional event happens.
 This could be as simple as a `division by zero`, or any other kind of invalid situation.
 
-```php
+```
 throw new Exception('Some error message.');
 ```
 
@@ -100,7 +100,7 @@ This may sound similar to other basic errors that you have already seen many tim
 
 Exceptions are actually objects and you have the option to `catch` them and execute certain code. This is done by using `try-catch` blocks:
 
-```php
+```
 try {
   // some code goes here
   // which might throw an exception
@@ -128,7 +128,7 @@ For example, here we have a function that throws an exception.
 We call that function from a second function.
 And finally we call the second function from the main code, to demonstrate this bubbling effect:
 
-```php
+```
 function bar() {
   throw new Exception('Message from bar().');  
 }
@@ -157,7 +157,7 @@ Let's see an example that involves multiple files and multiple classes.
 
 First, we have a User class, and we save it as user.php:
 
-```php
+```
 class User {
 
   public $name;
@@ -177,7 +177,7 @@ class User {
 
 It uses another class named Validator, which we put in validator.php:
 
-```php
+```
 class Validator {
   public function validate_email($email) {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -190,7 +190,7 @@ class Validator {
 From our main code, we are going to create a new User object, set the name and email values.
 Once we call the `save()` method, it will utilize the Validator class for checking the email format, which might return an exception:
 
-```php
+```
 include('user.php');
 include('validator.php');
 
@@ -205,7 +205,7 @@ $u->save();
 However, we would like to catch the exception, so there is no fatal error message.
 And this time we are going to look into the detailed information about this exception:
 
-```php
+```
 include('user.php');
 include('validator.php');
 
@@ -245,7 +245,7 @@ We can see the file name, line number, exceptions message and more. The trace da
 
 The structure of the default Exception class is shown in the PHP manual, where you can see all the methods and data it comes with:
 
-```php
+```
 class Exception {
   protected $message = 'Unknown exception';   // exception message
   private   $string;                          // __toString cache
@@ -279,7 +279,7 @@ Since this is an object oriented concept and Exception is a class, we can actual
 For example you may not want to display all the details of an exception to the user.
 Instead, you can display a user friendly message, and log the error message internally:
 
-```php
+```
 // to be used for database issues
 class DatabaseException extends Exception {
 
@@ -303,7 +303,7 @@ We just created two new types of exceptions. And they may have custom methods.
 
 When we catch the exception, we can display a fixed message, and call the custom methods internally:
 
-```php
+```
 function foo() {
   // ...
   // something wrong happened with the database
@@ -345,7 +345,7 @@ There is actually a way to centralize the handling of all uncaught exceptions so
 
 For this, we are going to be utilizing the `set_exception_handler()` function:
 
-```php
+```
 set_exception_handler('exception_handler');
 
 function exception_handler($e) {
@@ -362,7 +362,7 @@ throw new Exception('World.');
 
 The first line instructs PHP to call a given function when an exception happens and is not caught. This is the output:
 
-```html
+```
 Something went wrong.
 <!-- Uncaught exception: Hello. -->
 ```
@@ -375,7 +375,7 @@ If you want your script to continue running after an exception, you would have t
 
 We are going to finish off this tutorial by building a custom MySQL Exception class that has some useful features, and see how we can use it.
 
-```php
+```
 class MysqlException extends Exception {
 
   // path to the log file
@@ -414,7 +414,7 @@ In our code we can catch this exception, display a simple message to the user, a
 
 For example, let's try to connect to MySQL without providing any user/password information:
 
-```php
+```
 try {
   // attempt to connect
   if (!@mysql_connect()) {
@@ -436,7 +436,7 @@ The MysqlException class takes care of the error logging automatically. When you
 
 Let's add more code to our example, and also provide a correct login info:
 
-```php
+```
 try {
   // connection should work fine
   if (!@mysql_connect('localhost','root','')) {
