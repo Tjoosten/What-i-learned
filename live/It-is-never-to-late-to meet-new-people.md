@@ -1,7 +1,7 @@
 It's never to late to meet new people. 
 ====================================
 
-Today i was going to Brussels (Belguim) on my one. To meet Emily and Tobias. 
+Today i was going to Brussels (Belguim) on my one. To meet $ and $. 
 In they train i was scared. And mulling about things? What they think about authism? Who are they? 
 they are two awesome humans. We went out for a lunch and a chat. 
 After that we go out for a walk. Like some architectural buildings in the city. 
